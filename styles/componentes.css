@@ -22,6 +22,19 @@
     text-decoration: none;
 }
 
+.menu nav a::after {
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: var(--p2);
+    display: block;
+}
+
+.menu a:hover::after {
+    transition: 0.2s;
+    width: 100%;
+}
+
 @media(max-width: 600px) {
     .menu-content {
         flex-direction: column;
@@ -38,5 +51,9 @@
         padding: 15px 25px;
         background-color: var(--c11);
         border-radius: 5px;
+    }
+
+    .menu a:hover::after {
+        width: 0%;
     }
 }
