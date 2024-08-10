@@ -1,0 +1,12 @@
+.default-button {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    font-weight: bold;
+    background-image: var(--bg-p-gradient);
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 0px, 1px, 2px, var(--c12);
+    font-size: 1.125em;
+    cursor: pointer;
+}

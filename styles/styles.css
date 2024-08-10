@@ -1,2 +1,4 @@
 @import url(global.css);
-@import url(componentes.css);
+@import url(components/menu.css);
+@import url(components/buttons.css);
+@import url(intro.css);

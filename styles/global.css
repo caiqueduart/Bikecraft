@@ -17,6 +17,8 @@
     --p3: #A66F00;
     --p2: #E4A30B;
     --p1: #FFBB00;
+    --bg-p-gradient: linear-gradient(to bottom, #FFBF00, #F2A50C);
+    --max-width: 1200px;
 }
 
 * {
