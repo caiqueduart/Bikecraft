@@ -1,0 +1,49 @@
+.bikes {
+    background-color: var(--w);
+}
+
+.bikes img {
+    border-radius: 5px;
+    width: 100%;
+    min-width: 250px;
+}
+
+.bikes-content {
+    display: flex;
+    max-width: 1400px;
+    list-style: none;
+    gap: 40px;
+    margin: 40px auto;
+    padding: 0px 20px;
+    justify-content: center;
+    overflow: auto;
+    object-fit: cover;
+    justify-content: space-around;
+}
+
+.bikes h2 {
+    text-transform: lowercase;
+    font-size: 4em;
+    line-height: 1.225;
+    font-weight: 600;
+    margin-top: 120px;
+    max-width: 1200px;
+    margin: 120px auto 0px auto;
+}
+
+.bikes h2 span {
+    color: var(--p1);
+    max-width: 1200px;
+}
+
+@media(max-width: 1200px) {
+
+    .bikes h2 {
+        margin: 30px;
+        font-size: 2.5em;
+    }
+
+    .bikes .name-1 {
+        font-size: 1.5em;
+    }
+}

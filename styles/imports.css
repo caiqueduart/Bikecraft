@@ -1,4 +1,6 @@
 @import url(global.css);
 @import url(components/menu.css);
 @import url(components/buttons.css);
+@import url(components/bike-info.css);
 @import url(intro.css);
+@import url(bikes.css);
