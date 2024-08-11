@@ -2,5 +2,6 @@
 @import url(components/menu.css);
 @import url(components/buttons.css);
 @import url(components/bike-info.css);
-@import url(intro.css);
-@import url(bikes.css);
+@import url(home/customs.css);
+@import url(home/intro.css);
+@import url(home/bikes.css);

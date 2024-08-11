@@ -2,6 +2,10 @@
     background-color: var(--w);
 }
 
+.bikes .price {
+    margin-bottom: 20px;
+}
+
 .bikes img {
     border-radius: 5px;
     width: 100%;

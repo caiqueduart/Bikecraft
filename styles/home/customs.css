@@ -1,0 +1,74 @@
+.customs {
+    background-color: var(--c12);
+    box-shadow: inset 0px -80px 0px var(--w), inset 0px 80px 0px var(--w);
+}
+
+.customs .customs-content {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: auto;
+    max-width: 1200px;
+    gap: 60px;
+}
+
+.customs .customs-info h2 {
+    color: var(--w);
+    font-size: 4em;
+    line-height: 1.125;
+}
+
+.customs .customs-info span {
+    color: var(--p1);
+}
+
+.customs .customs-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.customs .customs-info {
+    padding: 80px 0px;
+    box-sizing: border-box;
+}
+
+.customs .customs-info p, a {
+    color: var(--c5);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 32px 0px;
+}
+
+.customs .customs-info a {
+    display: block;
+    color: var(--p1);
+    text-transform: uppercase;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 4px;
+    font-weight: 600;
+    margin: 0px 0px 80px 0px;
+}
+
+.customs .customs-info .det {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.customs .customs-info .det h3 {
+    color: var(--w);
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin: 8px 0px;
+}
+
+.customs .customs-info .det p {
+    font-size: 1em;
+    line-height: 1.5em;
+    max-width: 40ch;
+    margin: 0px;
+}

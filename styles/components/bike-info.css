@@ -3,6 +3,7 @@
     font-family: "Roboto", sans-serif;
     font-size: 1.125em;
     line-height: 1.3;
+    margin-left: 20px;
 }
 
 .price::before {
@@ -16,7 +17,20 @@
     line-height: 1.25;
     font-weight: bold;
     list-style: none;
-    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.name-2 {
+    color: var(--c11);
+    font-family: "Poppins", sans-serif;
+    font-size: 2em;
+    line-height: 1.25;
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .name-1::before {
@@ -25,9 +39,12 @@
     background-color: var(--p1);
     height: 8px;
     width: 12px;
-    right: 101%;
-    top: 40%;
-    position: absolute;
+    margin-right: 8px;
+}
+
+.name-1:hover:before {
+    width: 8%;
+    transition: 0.2s;
 }
 
 .name-2::before {
@@ -36,6 +53,10 @@
     background-color: var(--p1);
     height: 8px;
     width: 12px;
-    position: absolute;
-    top: -25%;
+    margin-bottom: 2px;
+}
+
+.name-2:hover::before {
+    width: 60%;
+    transition: 0.2s;
 }
