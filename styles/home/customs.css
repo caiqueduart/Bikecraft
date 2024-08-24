@@ -26,8 +26,6 @@
 
 .customs .customs-info p, a {
     color: var(--c5);
-    font-size: 1.5rem;
-    line-height: 1.5;
     margin: 32px 0px;
 }
 
@@ -59,4 +57,19 @@
     line-height: 1.5em;
     max-width: 40ch;
     margin: 0px;
+}
+
+@media(max-width: 1000px) {
+    .customs .customs-content {
+        grid-template-columns: 5fr 1fr;
+    }
+    .customs .customs-img {
+        display: none;
+    }
+}
+
+@media(max-width: 600px) {
+    .customs .customs-info .det {
+        grid-template-columns: 1fr;
+    }
 }
