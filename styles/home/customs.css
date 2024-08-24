@@ -39,6 +39,10 @@
     margin: 0px 0px 80px 0px;
 }
 
+.customs .customs-info a:hover {
+    color: var(--p3);
+}
+
 .customs .customs-info .det {
     display: grid;
     grid-template-columns: 1fr 1fr;

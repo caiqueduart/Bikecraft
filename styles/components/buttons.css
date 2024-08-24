@@ -10,3 +10,8 @@
     font-size: 1.125em;
     cursor: pointer;
 }
+
+.default-button:hover {
+    background-image: var(--bg-p-gradient-houver);
+    color: var(--w);
+}
