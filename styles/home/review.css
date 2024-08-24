@@ -1,0 +1,86 @@
+.review {
+    background-color: var(--p1);
+}
+
+.review section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.review div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review blockquote {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 80px;
+} 
+
+.review blockquote cite {
+    font-size: 2.25em;
+    color: var(--p5);
+    line-height: 1.33em;
+    max-width: 25ch;
+    font-weight: 600;
+    position: relative;
+}
+
+.review blockquote cite::before {
+    content: "\"";
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--p2);
+    font-size: 3em;
+    display: block;
+    position: absolute;
+    left: -60px;
+}
+
+.review blockquote cite::after {
+    content: "\"";
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--p2);
+    font-size: 3em;
+    display: block;
+    position: absolute;
+    right: -40px;
+}
+
+.review blockquote footer {
+    font-size: 1.5em;
+    color: var(--p4);
+    margin-top: 32px;
+    font-weight: 600;
+}
+
+@media(max-width: 1000px) {
+    .review blockquote cite {
+        font-size: 1.5em;
+    }
+
+    .review blockquote footer {
+        font-size: 1em;
+    }
+}
+
+@media(max-width: 800px) {
+    .review section {
+        grid-template-columns: 1fr;
+    }
+
+    .review blockquote {
+        padding: 30px;
+    }
+
+    .review blockquote cite {
+        font-size: 1.2em;
+        max-width: 100ch;
+    }
+
+    .review blockquote cite::before, .review blockquote cite::after {
+        display: none;
+    }
+}

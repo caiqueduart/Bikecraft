@@ -34,6 +34,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+.review-font {
+    font-family: "DM Serif Text", serif;
+}
+
 .content {
     max-width: var(--max-width);
     margin: auto;
