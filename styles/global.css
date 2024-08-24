@@ -25,10 +25,38 @@
     margin: 0px;
 }
 
-.title {
+.poppins {
     font-family: "Poppins", sans-serif;
 }
 
-.text {
+.roboto {
     font-family: "Roboto", sans-serif;
 }
+
+.content {
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+.title-1-c1, .title-1-c11 {
+    color: var(--w);
+    font-size: 4em;
+    line-height: 1.125;
+    font-weight: 600;
+}
+
+.title-1-c11 {
+    color: var(--c11);
+}
+
+.title-1-c1 span, .title-1-c11 span {
+    color: var(--p1);
+}
+
+.text-1 {
+    color: var(--c6);
+    font-size: 1.5em;
+    line-height: 1.5;
+    max-width: 40ch;
+}
+

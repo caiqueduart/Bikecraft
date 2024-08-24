@@ -4,11 +4,9 @@
 }
 
 .menu-content {
-    max-width: var(--max-width);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
     padding: 30px;
 }
 

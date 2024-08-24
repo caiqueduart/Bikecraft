@@ -14,7 +14,6 @@
 
 .bikes-content {
     display: flex;
-    max-width: 1400px;
     list-style: none;
     gap: 40px;
     margin: 40px auto;
@@ -26,18 +25,8 @@
 }
 
 .bikes h2 {
-    text-transform: lowercase;
-    font-size: 4em;
-    line-height: 1.225;
-    font-weight: 600;
-    margin-top: 120px;
     max-width: 1200px;
     margin: 120px auto 0px auto;
-}
-
-.bikes h2 span {
-    color: var(--p1);
-    max-width: 1200px;
 }
 
 @media(max-width: 1200px) {
