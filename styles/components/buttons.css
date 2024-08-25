@@ -1,17 +1,29 @@
-.default-button {
+.default-button, .gray-button {
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     padding: 16px 32px;
     font-weight: bold;
-    background-image: var(--bg-p-gradient);
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 1.125em;
     border-radius: 5px;
     border: 0px;
     box-shadow: 0px, 1px, 2px, var(--c12);
-    font-size: 1.125em;
-    cursor: pointer;
+}
+
+.default-button {
+    background-image: var(--bg-p-gradient);
 }
 
 .default-button:hover {
     background-image: var(--bg-p-gradient-houver);
-    color: var(--w);
+}
+
+.gray-button {
+    background-color: var(--c10);
+    color: var(--c4);
+}
+
+.gray-button:hover {
+    background-color: var(--c9);
 }

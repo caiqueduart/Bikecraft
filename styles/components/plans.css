@@ -1,0 +1,110 @@
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.plan-prata, .plan-ouro {
+    background-color: var(--c12);
+    padding: 32px 40px 32px 64px;
+    border-radius: 5px;
+    place-self: center;
+    min-width: 35%;
+}
+
+.plan-prata p, .plan-ouro p {
+    color: var(--w);
+    font-size: 2.25em;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    font-weight: bold;
+    justify-content: end;
+}
+
+.plan-prata p::after, .plan-ouro p::after {
+    content: "mensal";
+    display: block;
+    margin-top: -8px;
+    color: var(--c6);
+    font-size: 0.3em;
+    align-self: end;
+}
+
+.plan-prata h3 {
+    font-size: 2.25em;
+    color: var(--c6);
+    text-transform: uppercase;
+}
+
+.plan-ouro h3 {
+    font-size: 2.25em;
+    color: var(--p1);
+    text-transform: uppercase;
+}
+
+.plan-ouro ul, .plan-prata ul {
+    padding: 0px;
+    position: relative;
+}
+
+
+.plan-prata ul li, .plan-ouro ul li {
+    color: var(--w);
+    list-style: none;
+}
+
+.plan-prata ul li::before, .plan-ouro ul li::before {
+    content: url(../../img/icons/lista.svg);
+    display: inline-block;
+    left: -21px;
+    position: absolute;
+}
+
+.plan-prata ul li:not(:last-child), .plan-ouro ul li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.plan-prata button, .plan-ouro button {
+    margin: 32px auto auto auto;
+}
+
+.plan-prata div, .plan-ouro div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+@media(max-width: 1000px) {
+
+    .plan-ouro, .plan-prata {
+        min-width: 30%;
+    }
+    
+    .plan-prata div, .plan-ouro div {
+        flex-direction: column;
+    }
+
+    .plan-prata p, .plan-ouro p {
+        font-size: 1.5em;
+    }
+
+    .plan-prata p::after, .plan-ouro p::after {
+        align-self: start;
+        font-size: 0.5em;
+    }
+}
+
+@media(max-width: 700px) {
+    .plans {
+        flex-wrap: wrap;
+    }
+
+    .plan-ouro, .plan-prata {
+        min-width: 70%;
+    }
+
+    .plan-prata {
+        margin-bottom: 40px;
+    }
+}

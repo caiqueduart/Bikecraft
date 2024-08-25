@@ -1,0 +1,8 @@
+.insurance {
+    background-color: var(--c11);
+    padding: 20px;
+}
+
+.insurance .content h2 {
+    padding: 60px 0px;
+}
