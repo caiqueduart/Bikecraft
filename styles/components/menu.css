@@ -16,6 +16,7 @@
 }
 
 .menu a {
+    font-family: "Poppins", sans-serif;
     color: var(--w);
     text-decoration: none;
 }

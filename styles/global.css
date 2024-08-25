@@ -1,3 +1,5 @@
+@import url();
+
 :root {
     --c12: #000000;
     --c11: #111111;
@@ -44,6 +46,7 @@
 }
 
 .title-1-c1, .title-1-c11 {
+    font-family: "Poppins", sans-serif;
     color: var(--w);
     font-size: 4em;
     line-height: 1.125;
@@ -55,6 +58,7 @@
 }
 
 .title-1-c1 span, .title-1-c11 span {
+    font-family: "Poppins", sans-serif;
     color: var(--p1);
 }
 

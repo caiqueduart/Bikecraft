@@ -34,10 +34,12 @@
 }
 
 .footer .infos a {
+    font-family: "Poppins", sans-serif;
     display: inline-block;
     text-decoration: none;
     font-size: 1.125rem;
     margin: 0px;
+    color: var(--c5);
 }
 
 .footer .infos a:hover {
@@ -48,16 +50,16 @@
     padding-top: 15px;
 }
 
-.footer .contact li {
+.footer #contact li {
     font-size: 1.125rem;
     margin: 0px;
 }
 
-.footer .contact li:not(:first-child) {
+.footer #contact li:not(:first-child) {
     padding-top: 15px;
 }
 
-.footer .contact li:nth-child(2) {
+.footer #contact li:nth-child(2) {
     margin-bottom: 30px;
 }
 
