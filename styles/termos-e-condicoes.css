@@ -2,3 +2,53 @@
 @import url(components/footer.css);
 @import url(global.css);
 
+.termos-header {
+    background-color: var(--c11);
+    padding: 60px 20px;
+}
+
+.termos {
+    display: block;
+    padding: 120px 20px;
+}
+
+.termos ol {
+    list-style: none;
+}
+
+.termos ol li:first-child {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5em;
+    line-height: 1.33;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: var(--c10);
+}
+
+.termos ol li {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.125em;
+    line-height: 1.33;
+    color: var(--c10);
+    max-width: 70ch;
+}
+
+.termos ol li:not(:last-child) {
+    padding-bottom: 26px;
+}
+
+.termos ol:not(:first-child) {
+    padding-top: 48px;
+}
+
+@media(max-width: 600px) {
+    .termos {
+        padding: 60px 20px;
+    }
+}
+
+@media(max-width: 600px) {
+    .termos ol li {
+        font-size: 1em;
+    }
+}
