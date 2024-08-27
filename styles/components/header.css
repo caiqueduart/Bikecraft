@@ -1,0 +1,10 @@
+.header {
+    background-color: var(--c11);
+    padding: 60px 20px;
+}
+
+@media(max-width: 600px) {
+    .termos {
+        padding: 60px 20px;
+    }
+}
