@@ -1,6 +1,8 @@
 .default-button, .gray-button {
+    display: inline-block;
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
+    text-decoration: none;
     padding: 16px 32px;
     font-weight: bold;
     cursor: pointer;
@@ -13,6 +15,7 @@
 
 .default-button {
     background-image: var(--bg-p-gradient);
+    color: var(--p5);
 }
 
 .default-button:hover {
