@@ -5,6 +5,19 @@
 @import url(../components/buttons.css);
 @import url(../components/bike-info.css);
 
+.menu nav a:nth-child(1):after {
+    content: "";
+    height: 2px;
+    width: auto;
+    background-color: var(--w);
+    display: block;
+}
+
+.menu nav a:nth-child(1):hover:after {
+    background-color: var(--p1);
+    transition: 0.2s;
+}
+
 .bikes {
     padding: 24px 0px;
 }
@@ -12,12 +25,30 @@
 .content div {
     border-radius: 5px;
     width: 100vw;
+    position: relative;
 }
 
 .content div img {
     border-radius: 5px;
     height: 100%;
     object-fit: cover;
+}
+
+.content div p {
+    display: inline-block;
+    position: absolute;
+    font-size: 1.125em;
+    background-color: var(--c12);
+    color: var(--w);
+    padding: 8px 16px 8px 8px;
+    border-radius: 4px 0px 0px 4px;
+    right: 0;
+    margin-top: 20px;
+}
+
+.content div p::before {
+    content: "R$ ";
+    font-family: inherit;
 }
 
 .bike-info .content {

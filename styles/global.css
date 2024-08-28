@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
 
 :root {
+    --c14: #620606;
+    --c13: #066209;
     --c12: #000000;
     --c11: #111111;
     --c10: #2E2E2E;
@@ -32,6 +34,11 @@
 
 img {
     max-width: 100%;
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
 }
 
 .poppins {
