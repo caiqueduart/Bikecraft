@@ -31,6 +31,7 @@
 .footer .social {
     display: flex;
     gap: 32px;
+    cursor: pointer;
 }
 
 .footer .infos a {

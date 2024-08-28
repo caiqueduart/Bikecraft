@@ -1,3 +1,165 @@
 @import url(../global.css);
 @import url(../components/menu.css);
 @import url(../components/footer.css);
+@import url(../components/header.css);
+@import url(../components/buttons.css);
+@import url(../components/bike-info.css);
+
+.bikes {
+    padding: 24px 0px;
+}
+
+.content div {
+    border-radius: 5px;
+    width: 100vw;
+}
+
+.content div img {
+    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bike-info .content {
+    display: flex;
+    gap: 40px;
+    padding: 60px;
+}
+
+.bike-info .content main {
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    place-items: start;
+}
+
+.bike-info .content main .description {
+    grid-area: 2 / 1;
+    grid-column: 1 / 3;
+    font-size: 1.125em;
+    line-height: 1.33;
+    color: var(--c8);
+    max-width: 45ch;
+    padding: 20px 0px 32px 0px;
+}
+
+.bike-info .content ul {
+    list-style: none;
+    grid-row: 3;
+}
+
+.bike-info .content a {
+    display: flex;
+    grid-area: 3 / 2;
+    place-self: flex-end;
+    gap: 16px;
+}
+
+.bike-info .content a::after {
+    content: url(../../img/decorations/seta.svg);
+}
+
+.bike-info .content ul li {
+    display: flex;
+    align-content: center;
+    gap: 8px;
+    font-size: 1.125em;
+    font-weight: 400;
+    color: var(--c8);
+}
+
+.bike-info .content ul li:not(:last-child) {
+    padding-bottom: 8px;
+}
+
+.bike-info .content ul li:nth-child(1)::before {
+    content: url(../../img/icons/eletrica.svg);
+}
+
+.bike-info .content ul li:nth-child(2)::before {
+    content: url(../../img/icons/carbono.svg);
+}
+
+.bike-info .content ul li:nth-child(3)::before {
+    content: url(../../img/icons/velocidade.svg);
+}
+
+.bike-info .content ul li:nth-child(4)::before {
+    content: url(../../img/icons/rastreador.svg);
+}
+
+.bikes .bike-info:nth-child(2) {
+    box-shadow: inset -65vw 0px 0px var(--c11);
+}
+
+.bikes .bike-info:nth-child(2) main h3 {
+    color: var(--w);
+}
+
+.bikes .bike-info:nth-child(2) main li, .bikes .bike-info:nth-child(2) main p {
+    color: var(--c5);
+}
+
+@media(max-width: 1500px) {
+    .bikes {
+        padding: 0px;
+    }
+
+    .bike-info .content {
+        padding: 32px 20px;
+        display: flex;
+    }
+
+    .bike-info .content main {
+        grid-template-columns: auto;
+    }
+
+    .content div {
+        max-width: 50%;
+        margin: auto;
+        justify-self: center;
+        margin: 0px;
+    }
+
+    .bikes .bike-info:nth-child(2) {
+        box-shadow: none;
+        background-color: var(--c11);
+    }
+
+    .bike-info .content a {
+    }
+}
+
+@media(max-width: 1000px) {
+    .bike-info .content main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bike-info .content a {
+        place-self: start;
+        margin-top: 32px;
+    }
+}
+
+@media(max-width: 800px) {
+
+    .bike-info .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content div {
+        max-width: 80%;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .bike-info .content {
+        gap: 16px;
+    }
+
+    .content div {
+        max-width: 100%;
+    }
+}

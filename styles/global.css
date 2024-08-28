@@ -30,6 +30,10 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
+
 .poppins {
     font-family: "Poppins", sans-serif;
 }
