@@ -80,6 +80,59 @@
     content: url(../../img/icons/velocidade.svg);
 }
 
+.perguntas .content {
+    margin-bottom: 10%;
+    padding: 20px;
+}
+
+.perguntas h2 {
+    margin: 10% 0% 6% 0%;
+}
+
+.perguntas dt {
+    color: var(--c11);
+    font-size: 1.125em;
+    line-height: 1.33;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.perguntas dt::before {
+    display: inline-block;
+    content: "";
+    width: 12px;
+    height: 8px;
+    background-color: var(--p1);
+    position: absolute;
+    left: -20px;
+    bottom: 8px;
+}
+
+.perguntas dt::after {
+    display: inline-block;
+    content: url(../../img/icons/seta-abrir.svg);
+    transform: rotate(180deg);
+}
+
+.perguntas dd {
+    color: var(--c9);
+    font-size: 1.125em;
+    line-height: 1.33;
+    margin-top: 16px;
+}
+
+.perguntas dl div {
+    padding: 20px 40px;
+}
+
+.perguntas dl div:nth-child(odd) {
+    background-color: var(--c1);
+    border-radius: 5px;
+}
+
 @media(max-width: 800px) {
     .vantagens ul {
         grid-template-columns: 1fr 1fr;
