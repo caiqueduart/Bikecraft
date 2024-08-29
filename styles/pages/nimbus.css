@@ -201,6 +201,12 @@
     }
 }
 
+@media(max-width: 600px) {
+    .images {
+        gap: 8px
+    }
+}
+
 @media(max-width: 420px) {
     .buttons {
         display: flex;

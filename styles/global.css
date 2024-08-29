@@ -96,12 +96,16 @@ ul {
     }
 
     .title-2-c5 {
-        font-size: 1.0em;
+        font-size: 1.0em !important;
     }
 }
 
 @media(max-width: 600px) {
     .text-1 {
-        font-size: 1.15em;
+        font-size: 1.15em !important;
+    }
+    
+    .p-responsive {
+        font-size: 1.2em !important;
     }
 }
