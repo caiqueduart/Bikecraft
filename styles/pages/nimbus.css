@@ -3,6 +3,7 @@
 @import url(../components/header.css);
 @import url(../components/footer.css);
 @import url(../components/buttons.css);
+@import url(../components/bike-info.css);
 
 .menu nav a:nth-child(1):after {
     content: "";
@@ -37,6 +38,7 @@
 .images li img {
     border-radius: 5px;
     height: 100%;
+    cursor: crosshair;
 }
 
 .images li:first-child {
@@ -192,6 +194,73 @@
 }
 .ficha td {
     color: var(--c6);
+}
+
+.bikes .content {
+    padding: 20px;
+}
+
+.bikes .content h2 {
+    margin: 5% 0%;
+}
+
+.bikes .content ul {
+    display: flex;
+    gap: 5%;
+    margin-bottom: 10%;
+    overflow: auto;
+    padding-bottom: 20px;
+}
+
+.bikes .content ul img {
+    border-radius: 5px;
+    min-width: 250px;
+}
+
+.seguro {
+    background-color: var(--c11);
+    box-shadow: inset 0px -80px 0px var(--c12), inset 0px 80px 0px var(--w);
+    padding: 20px;
+}
+
+.seguro .content {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.seguro p {
+    font-size: 1.5em;
+    color: var(--c5);
+    max-width: 45ch;
+    padding: 32px 0px 20px 0px;
+}
+
+.seguro img {
+    border-radius: 5px;
+    margin-left: -10%;
+    object-fit: cover;
+}
+
+@media(max-width: 1100px) {
+    .seguro {
+        box-shadow: none;
+    }
+    
+    .seguro .content {
+        padding: 0px;
+        gap: 4%;
+    }
+
+    .seguro img {
+        margin: 0px;
+    }
+}
+
+@media(max-width: 900px) {
+    .seguro img {
+       display: none;
+    }
 }
 
 @media(max-width: 800px) {
