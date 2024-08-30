@@ -1,0 +1,259 @@
+@import url(../global.css);
+@import url(../components/menu.css);
+@import url(../components/footer.css);
+@import url(../components/buttons.css);
+@import url(../components/header.css);
+
+.geral {
+    padding: 20px;
+}
+
+.line {
+    box-shadow: inset 0px 40vh 0px var(--c11);
+}
+
+.menu nav a:nth-child(3):after {
+    content: "";
+    height: 2px;
+    width: auto;
+    background-color: var(--w);
+    display: block;
+}
+
+.menu nav a:nth-child(3):hover:after {
+    background-color: var(--p1);
+    transition: 0.2s;
+}
+
+.form-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    border-radius: 5px;
+    background-color: var(--w);
+    box-shadow: var(--shadow);
+    width: auto;
+    margin-bottom: 8%;
+}
+
+.content .info {
+    display: grid;
+    background-color: var(--c12);
+    padding: 15%;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form label {
+    font-family: "Poppins", sans-serif;
+}
+
+.info > h3 {
+    font-size: 1em;
+    color: var(--w);
+    margin-bottom: 60px;
+}
+
+.info li {
+    font-size: 1em;
+    line-height: 1.5;
+    color: var(--c4);
+}
+
+.info .contato li:nth-child(2) {
+    margin: 32px 0px;
+}
+
+.info .social {
+    display: flex;
+    margin-top: 60px;
+    gap: 32px;
+}
+
+.form {
+    padding: 60px;
+}
+
+.form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form form > div { 
+    display: grid;
+}
+
+.form input {
+    background-color: var(--c1);
+    width: auto;
+    border-radius: 5px;
+    border: solid 1px var(--c2);
+    padding: 12px;
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+}
+
+.form label {
+    font-size: 1em;
+    color: var(--c11);
+    font-weight: 600;
+}
+
+.form form div:nth-child(2) {
+    grid-area: 1 / 2;
+}
+
+.form form div:nth-child(3), .form form div:nth-child(4) {
+    grid-column: 1 / -1;
+}
+
+.form form div:last-of-type input {
+    padding-bottom: 120px;
+}
+
+.form .default-button {
+    justify-self: start;
+}
+
+.local .content {
+    padding: 20px;
+}
+
+.local .content > ul {
+    display: flex;
+    gap: 40px;
+    border-radius: 5px;
+}
+
+.local .content > ul > li {
+    background-color: var(--w);
+    box-shadow: var(--shadow);
+}
+
+.local .content img {
+    cursor: pointer;
+}
+
+.local {
+    margin-bottom: 8%;
+}
+
+.local h2 {
+    margin-bottom: 60px;
+}
+
+.local-info {
+    padding: 32px;
+}
+
+.local-info ul {
+    display: flex;
+    gap: 60px;
+    padding: 16px 24px;
+}
+
+.local-info li {
+    color: var(--c8);
+    font-size: 1em;
+    line-height: 2;
+    padding-left: 12px;
+    border-left: solid 2px var(--c2);
+}
+
+.local-info p {
+    color: var(--c12);
+    font-weight: 600;
+    padding-top: 16px;
+    font-size: 1em;
+    display: flex;
+    gap: 12px;
+}
+
+.local-info p::before {
+    content: url(../../img/icons/horario.svg);
+}
+
+.local h3 {
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.local h3::before {
+    content: "";
+    width: 12px;
+    height: 8px;
+    background-color: var(--p1);
+    display: inline-block;
+}
+
+.local img {
+    border-radius: 5px;
+}
+
+@media(max-width: 1200px) {
+    .local .content > ul {
+        flex-direction: column;
+        max-width: 500px;
+        margin: auto;
+    }
+}
+
+@media(max-width: 900px) {
+    .content .info {
+        padding: 5%;
+        grid-row: 2; 
+    }
+
+    .line {
+        box-shadow: none;
+        padding: 20px;
+    }
+    
+    .form-content {
+        grid-template-columns: 1fr;
+        padding: 0px;
+        gap: 20px;
+    }
+
+    .form {
+        padding: 10px;
+    }
+
+    .form form {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .default-button {
+        align-self: start;
+    }
+}
+
+@media(max-width: 500px) {
+    .content .info {
+        display: none;
+    }
+
+    .local-info {
+        padding: 20px;
+    }
+
+    .local-info > ul {
+        display: none;
+    }
+
+    .local h3 {
+        font-size: 1.5em;
+    }
+
+    .local p {
+        font-weight: 400;
+        font-size: 0.8em;
+        padding-top: 0px;
+        gap: 6px;
+    }
+
+}

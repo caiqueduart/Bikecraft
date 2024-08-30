@@ -24,7 +24,7 @@
     box-sizing: border-box;
 }
 
-.customs .customs-info p, a {
+.customs .customs-info p, .customs .customs-info > a {
     color: var(--c5);
     margin: 32px 0px;
 }

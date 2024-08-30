@@ -17,8 +17,10 @@
 
 .menu a {
     font-family: "Poppins", sans-serif;
+    font-size: 1em;
     color: var(--w);
     text-decoration: none;
+    margin: 16px 0px;
 }
 
 .menu nav a::after {

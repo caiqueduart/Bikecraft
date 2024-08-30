@@ -8,6 +8,10 @@
     padding: 120px 20px;
 }
 
+.termos .content li:not(:first-child) {
+    font-family: "Roboto", sans-serif;
+}
+
 .termos ol {
     list-style: none;
 }
