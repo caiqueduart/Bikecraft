@@ -101,6 +101,7 @@
     grid-template-columns: 1fr 1fr;
     border-radius: 0px 0px 5px 5px;
     padding: 0px 16px 16px 32px;
+    margin-top: -1px;
     height: 0%;
 }
 
@@ -152,5 +153,22 @@
 @media(max-width: 1080px) {
     .form .content {
         grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 600px) {
+    .segu-bike {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .itens, .dados {
+        box-sizing: border-box;
+        padding: 20px;
+        margin: auto;
+    }
+
+    .form {
+        width: auto;
     }
 }
