@@ -164,6 +164,10 @@
         box-shadow: none;
         margin-bottom: 60px;
     }
+
+    .itens {
+        border-radius: 0px;
+    }
 }
 
 @media(max-width: 600px) {

@@ -30,6 +30,7 @@
 }
 
 .customs .customs-info a {
+    text-decoration: underline;
     display: block;
     color: var(--p1);
     text-transform: uppercase;
