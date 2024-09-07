@@ -20,7 +20,8 @@
 
 .itens #bikecraft:checked ~ .bikecraft,
 .itens #seguro:checked ~ .seguro {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .segu-bike input {
@@ -144,6 +145,13 @@
     background-image: url(../../../img/icons/rastreador.svg);
 }
 
+.seguro .detalhes ul li::before {
+    background-image: url(../../../img/icons/lista.svg);
+    background-size: auto;
+    align-self: center;
+    height: 9px;
+}
+
 .itens input:checked + label + .detalhes {
     display: grid;
     height: auto;
@@ -153,22 +161,33 @@
 @media(max-width: 1080px) {
     .form .content {
         grid-template-columns: 1fr;
+        box-shadow: none;
+        margin-bottom: 60px;
     }
 }
 
 @media(max-width: 600px) {
     .segu-bike {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .itens, .dados {
         box-sizing: border-box;
         padding: 20px;
         margin: auto;
+        width: 100%;
     }
 
-    .form {
-        width: auto;
+    .segu-bike input {
+        display: none;
+    }
+
+    .seguro label, .bikecraft label {
+        margin-top: 20px;
+    }
+
+    .dados-entrega div:nth-of-type(3), .dados-entrega div:nth-of-type(4){
+        grid-column: 1 / -1;
     }
 }
