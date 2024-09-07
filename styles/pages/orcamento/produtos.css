@@ -1,0 +1,156 @@
+.itens {
+    background-color: var(--c12);
+    padding: 60px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.seguro, .bikecraft, .itens span, .detalhes {
+    display: none;
+}
+
+.itens h3 {
+    color: var(--c5);
+    grid-template-columns: 1 / -1;
+}
+
+.itens input, .itens label {
+    display: inline;
+    width: auto;
+}
+
+.itens #bikecraft:checked ~ .bikecraft,
+.itens #seguro:checked ~ .seguro {
+    display: block;
+}
+
+.segu-bike input {
+    pointer-events: none;
+    opacity: 0;
+}
+
+.segu-bike {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.segu-bike > label:first-of-type {
+    grid-area: 2 / 1;
+}
+
+.segu-bike label:last-of-type {
+    grid-area: 2 / 2;
+}
+
+.itens label {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-items: stretch;
+    font-size: 1em;
+    color: var(--c4);
+    background-color: var(--c10);
+    padding: 16px 32px;
+    border-radius: 5px;
+    gap: 16px;
+}
+
+.bikecraft, .seguro {
+    grid-column: 1 / -1;
+}
+
+.itens label::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: var(--c6);
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 8px var(--c10);
+    border: solid 1px var(--c6);
+    box-sizing: border-box;
+}
+
+.itens label:hover {
+    background-color: var(--c9);
+    cursor: pointer;
+}
+
+.itens input:checked + label {
+    background-color: var(--w);
+    color: var(--c11);
+}
+
+.bikecraft input:checked + label, .seguro input:checked + label {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.itens input:checked + label::before {
+    box-shadow: inset 0 0 0 3px var(--w);
+}
+
+.itens input:checked + label > span {
+    display: inline-block;
+}
+
+.detalhes {
+    background-color: var(--w);
+    font-size: 0.75em;
+    align-items: center;
+    color: var(--c8);
+    grid-template-columns: 1fr 1fr;
+    border-radius: 0px 0px 5px 5px;
+    padding: 0px 16px 16px 32px;
+    height: 0%;
+}
+
+.detalhes img {
+    border-radius: 5px;
+}
+
+.detalhes ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.detalhes ul li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.detalhes ul li::before {
+    content: "";
+    display: block;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+.detalhes ul li:nth-child(1)::before {
+    background-image: url(../../../img/icons/eletrica.svg);
+}
+
+.detalhes ul li:nth-child(2)::before {
+    background-image: url(../../../img/icons/carbono.svg);
+}
+
+.detalhes ul li:nth-child(3)::before {
+    background-image: url(../../../img/icons/velocidade.svg);
+}
+
+.detalhes ul li:nth-child(4)::before {
+    background-image: url(../../../img/icons/rastreador.svg);
+}
+
+.itens input:checked + label + .detalhes {
+    display: grid;
+    height: auto;
+    transition: 0.1s;
+}
+
+@media(max-width: 1080px) {
+    .form .content {
+        grid-template-columns: 1fr;
+    }
+}

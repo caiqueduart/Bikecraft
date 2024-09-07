@@ -82,7 +82,7 @@
     display: grid;
 }
 
-.form input {
+.form input, .form textarea {
     background-color: var(--c1);
     width: auto;
     border-radius: 5px;
@@ -106,8 +106,10 @@
     grid-column: 1 / -1;
 }
 
-.form form div:last-of-type input {
-    padding-bottom: 120px;
+.form textarea {
+    padding-bottom: 100px;
+    resize: vertical;
+    max-width: 100%;
 }
 
 .form .default-button {

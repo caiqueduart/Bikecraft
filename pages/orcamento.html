@@ -4,21 +4,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
-    <title>Orçamento</title><style>
-        @import url(../styles/global.css);
-        main {
-            display: grid;
-            height: 100vh;
-            place-content: center;
-            text-align: center;
-            gap: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="../styles/pages/orcamento/orcamento.css">
+    <title>Orçamento</title>
 </head>
 <body>
+    <header class="menu">
+        <div class="content menu-content">
+            <a href="../index.html"><img src="../img/bikcraft.svg" alt="bikecraft"></a>
+            <nav>
+                <a class="poppins" href="../pages/bicicletas.html">Bicicletas</a>
+                <a class="poppins" href="../pages/seguros.html">Seguros</a>
+                <a class="poppins" href="../pages/contato.html">Contatos</a>
+            </nav>
+        </div>
+    </header>
     <main>
-        <p class="poppins"></p><b>[ ^_^ ]</b></p>
-        <p class="poppins">Ainda estou construindo esta parte . . .</p>
+        <header class="header">
+            <section class="content">
+                <p class="title-2-c5">cotações no seu email</p>
+                <h2 class="poppins title-1-c1">solicite um orçamento<span>.</span></h2>
+            </section>
+        </header>
+        <section class="form">
+            <form class="content" action="">
+                <ul class="itens">
+                    <div class="segu-bike">
+                        <h3>bikcraft ou seguro?</h3>
+                        <input type="radio" id="bikecraft" name="tipo-item" checked>
+                        <label for="bikecraft">Bikcraft</label>
+                        <input type="radio" id="seguro" name="tipo-item">
+                        <label for="seguro">Seguro</label>
+                        
+                        <div class="bikecraft">
+                            <h3>escolha a sua:</h3>
+                            <input type="radio" id="nimbus" name="tipo-bikecraft">
+                            <label for="nimbus">
+                                <p>Nimbus Stark</p>
+                                <span>R$ 4999</span>
+                            </label>
+                            <div class="detalhes">
+                                <ul class="poppins">
+                                    <li>Motor Elétrico</li>
+                                    <li>Fibra de Carbono</li>
+                                    <li>40 km/h</li>
+                                    <li>Rastreador</li>
+                                </ul>
+                                <div><img src="../img/bikes/nimbus.jpg" alt="nimbus"></div>
+                            </div>
+                            <input type="radio" id="magic" name="tipo-bikecraft">
+                            <label for="magic">
+                                <p>Magic Might</p> 
+                                <span>R$ 2499</span>
+                            </label>
+                            <div class="detalhes">
+                                <ul class="poppins">
+                                    <li>Motor Elétrico</li>
+                                    <li>Fibra de Carbono</li>
+                                    <li>40 km/h</li>
+                                    <li>Rastreador</li>
+                                </ul>
+                                <div><img src="../img/bikes/magic.jpg" alt="nimbus"></div>
+                            </div>
+                            <input type="radio" id="nebula" name="tipo-bikecraft">
+                            <label for="nebula">
+                                <p>Nebula Cosmic</p>
+                                <span>R$ 3999</span>
+                            </label>
+                            <div class="detalhes">
+                                <ul class="poppins">
+                                    <li>Motor Elétrico</li>
+                                    <li>Fibra de Carbono</li>
+                                    <li>40 km/h</li>
+                                    <li>Rastreador</li>
+                                </ul>
+                                <div><img src="../img/bikes/nebula.jpg" alt="nimbus"></div>
+                            </div>
+                        </div>
+                        <div class="seguro">
+                            <h3>escolha o seu:</h3>
+                            <input type="radio" id="ouro" name="plan">
+                            <label for="ouro">
+                                <p>Ouro</p>
+                                <span>R$ 299</span>
+                            </label>
+                            <input type="radio" id="prata" name="plan">
+                            <label for="prata">
+                                <p>Prata</p>
+                                <span>R$ 199</span>
+                            </label>
+                        </div>
+                    </div>
+                </ul>
+                <ul class="dados">
+                    <ul>
+                        <li class="dados-pessoais">
+                            <h3>dados pessoais</h3>
+                            <div>
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" id="nome">
+                            </div>
+                            <div>
+                                <label for="sobrenome">Sobrenome</label>
+                                <input type="text" name="sobrenome" id="sobrenome">
+                            </div>
+                            <div>
+                                <label for="cpf">CPF</label>
+                                <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                        </li>
+                        <li class="dados-entrega">
+                            <h3>entrega</h3>
+                            <div>
+                                <label for="cep">CEP</label>
+                                <input type="text" name="cep" id="cep">
+                            </div>
+                            <div>
+                                <label for="numero">Número</label>
+                                <input type="text" name="numero" id="numero">
+                            </div>
+                            <div>
+                                <label for="logradouro">Logradouro</label>
+                                <input type="text" name="logradouro" id="logradouro" placeholder="Rua, avenida...">
+                            </div>
+                            <div>
+                                <label for="bairro">Bairro</label>
+                                <input type="text" name="bairro" id="bairro">
+                            </div>
+                            <div>
+                                <label for="cidade">Cidade</label>
+                                <input type="text" name="cidade" id="cidade">
+                            </div>
+                            <div>
+                                <label for="estado">Estado</label>
+                                <select name="estado" id="estado">
+                                    <option value="" selected disabled>Selecione</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="termos" name="termos">
+                                <label for="termos">Li e aceito os <a href="../pages/termos-e-condicoes.html" target="_blank">termos e condições</a>.</label>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="default-button">solicitar orçamento</a>
+                </ul>
+            </form>
+        </section>
     </main>
+    <footer class="footer">
+        <section class="content">
+            <article class="logo"><a href="../index.html"><img src="../img/bikcraft.svg" alt="bikecraft"></a></article>
+            <article class="roboto">
+                <h3>CONTATO</h3>
+                <ul id="contact">
+                    <li>+55 21 9999-9999</li>
+                    <li>contato@bikcraft.com</li>
+                    <li>Rua Ali Perto, 42 - Botafogo</li>
+                    <li>Rio de Janeiro - RJ</li>
+                </ul>
+                <ul class="social">
+                    <li><a><img src="../img/icons/social/instagram.svg" alt="instagram"></a></li>
+                    <li><a><img src="../img/icons/social/facebook.svg" alt="facebook"></a></li>
+                    <li><a><img src="../img/icons/social/youtube.svg" alt="youtube"></a></li>
+                </ul>
+            </article>
+            <article>
+                <h3 class="roboto">INFORMAÇÕES</h3>
+                <ul class="poppins infos">
+                    <li><a href="../pages/bicicletas.html">Bicicletas</a></li>
+                    <li><a href="../pages/seguros.html">Seguros</a></li>
+                    <li><a href="../pages/contato.html">Contato</a></li>
+                    <li><a href="../pages/termos-e-condicoes.html" target="_blank">Termos e Condições</a></li>
+                </ul>
+            </article>
+        </section>
+        <p class="roboto">Bikcraft © Alguns direitos reservados.</p>
+    </footer>
 </body>
 </html>
