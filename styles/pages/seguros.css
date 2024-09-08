@@ -97,6 +97,7 @@
 }
 
 .perguntas dt button {
+    font-family: "Poppins", sans-serif;
     background: none;
     border: none;
     color: var(--c11);
