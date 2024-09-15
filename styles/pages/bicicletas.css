@@ -98,6 +98,10 @@
     color: var(--c8);
 }
 
+.name-2 a::after {
+    display: none;
+}
+
 .bike-info .content ul li:not(:last-child) {
     padding-bottom: 8px;
 }
@@ -122,7 +126,7 @@
     box-shadow: inset -65vw 0px 0px var(--c11);
 }
 
-.bikes .bike-info:nth-child(2) main h3 {
+.bikes .bike-info:nth-child(2) main h3 a {
     color: var(--w);
 }
 
@@ -154,9 +158,6 @@
     .bikes .bike-info:nth-child(2) {
         box-shadow: none;
         background-color: var(--c11);
-    }
-
-    .bike-info .content a {
     }
 }
 
